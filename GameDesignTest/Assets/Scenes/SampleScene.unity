@@ -1547,6 +1547,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812538084}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &917878314 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7462649720628451264, guid: 6135fae009a8f444e83f5474d82b8c1b, type: 3}
+  m_PrefabInstance: {fileID: 6974439079849185893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae63d9bbe0bb1f4fb6092e54409a315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1012501227
 GameObject:
   m_ObjectHideFlags: 0
@@ -4116,6 +4127,14 @@ PrefabInstance:
     - target: {fileID: 1781035262924558330, guid: 6135fae009a8f444e83f5474d82b8c1b, type: 3}
       propertyPath: m_Name
       value: FPS Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212026968586642662, guid: 6135fae009a8f444e83f5474d82b8c1b, type: 3}
+      propertyPath: _inputManager
+      value: 
+      objectReference: {fileID: 917878314}
+    - target: {fileID: 6212026968586642662, guid: 6135fae009a8f444e83f5474d82b8c1b, type: 3}
+      propertyPath: mouseInputMultiplier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6477882022388209225, guid: 6135fae009a8f444e83f5474d82b8c1b, type: 3}
       propertyPath: prewarm

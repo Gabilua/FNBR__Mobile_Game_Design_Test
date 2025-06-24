@@ -1,38 +1,61 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static PlayerInputManager;
 
 namespace CMF
 {
 	//This character movement input class is an example of how to get input from a keyboard to control the character;
     public class CharacterKeyboardInput : CharacterInput
     {
-		public string horizontalInputAxis = "Horizontal";
-		public string verticalInputAxis = "Vertical";
-		public KeyCode jumpKey = KeyCode.Space;
+        private PlayerInputManager _inputManager;
 
-		//If this is enabled, Unity's internal input smoothing is bypassed;
-		public bool useRawInput = true;
+		Vector2 movementInput;
+        bool jumpInput;
+
+        private void Awake()
+        {
+            _inputManager = GetComponent<PlayerInputManager>();
+
+            _inputManager.OnInputReceived += OnInputReceived;
+        }
+
+        private void OnInputReceived(ButtonType button, InputType inputType, Vector2? inputAxis)
+		{
+			switch (button)
+			{
+                case ButtonType.LStick:
+                    {
+                        if (inputType == InputType.Press)
+                            movementInput = (Vector2)inputAxis;
+                        else if (inputType == InputType.Release)
+                            movementInput = Vector3.zero;
+                    }                    
+                    break;
+                case ButtonType.South:
+                    {
+                        if (inputType == InputType.Press)
+                            jumpInput = true;
+                        else if (inputType == InputType.Release)
+                            jumpInput = false;
+                    }
+                    break;
+            }
+		}
 
         public override float GetHorizontalMovementInput()
 		{
-			if(useRawInput)
-				return Input.GetAxisRaw(horizontalInputAxis);
-			else
-				return Input.GetAxis(horizontalInputAxis);
-		}
+            return movementInput.x;
+        }
 
 		public override float GetVerticalMovementInput()
 		{
-			if(useRawInput)
-				return Input.GetAxisRaw(verticalInputAxis);
-			else
-				return Input.GetAxis(verticalInputAxis);
-		}
+            return movementInput.y;
+        }
 
 		public override bool IsJumpKeyPressed()
 		{
-			return Input.GetKey(jumpKey);
+			return jumpInput;
 		}
     }
 }

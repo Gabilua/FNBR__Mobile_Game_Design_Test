@@ -71,8 +71,8 @@ public class CombatController : MonoBehaviour
     #region Setup
     private void SetupCombat()
     {
-        _inputManager = GetComponent<PlayerInputManager>();
         _rigidbody = GetComponent<Rigidbody>();
+        _inputManager = GetComponent<PlayerInputManager>();
 
         _inputManager.OnInputReceived += OnInputReceived;
 
@@ -101,6 +101,7 @@ public class CombatController : MonoBehaviour
 
         currentProperties.initialPosition = _cannonBarrelPoint.position;
         currentProperties.initialDirection = _cannonBarrelPoint.forward;
+        currentProperties.addedMovementVector = GetCurrentMovementVector();
         currentProperties.initialSpeed = GetShootingForce();
 
         return currentProperties;

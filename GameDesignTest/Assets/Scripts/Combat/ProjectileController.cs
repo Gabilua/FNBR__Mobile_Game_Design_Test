@@ -39,7 +39,7 @@ public class ProjectileController : MonoBehaviour
     #region Movement
     private void ShootProjectile()
     {
-        _rigibody.AddForce(_projectileProperties.initialSpeed * _projectileProperties.initialDirection, ForceMode.Impulse);
+        _rigibody.AddForce(_projectileProperties.initialSpeed *( _projectileProperties.initialDirection + (_projectileProperties.addedMovementVector * 0.25f)), ForceMode.Impulse);
     }
     private void ProjectileAlignment()
     {
@@ -72,6 +72,7 @@ public struct ProjectileRuntimeProperties
 {
     public Vector3 initialPosition;
     public Vector3 initialDirection;
+    public Vector3 addedMovementVector;
     public float initialSpeed;
     public Vector3 currentDirection;
 
