@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e791e7ddcfb92504abbdeb940bd2f770, type: 3}
+  m_Name: Tactical Cannon
+  m_EditorClassIdentifier: 
+  weaponProjectile: {fileID: 7129393015166952317, guid: e40792babae45d54fbaf996c1d318a4b, type: 3}
+  weaponFireVFX: {fileID: 1433630729592665867, guid: e11328d4bdcdf9d4880c36438c307208, type: 3}
+  weaponHitVFX: {fileID: 2567992167572486636, guid: 73d689c41d98a1541b0d20393ffa891e, type: 3}
+  weaponProjectileBaseForce: 4
+  weaponTotalChargeTime: 3
+  weaponShotCooldown: 5
