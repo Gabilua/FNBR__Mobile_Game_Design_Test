@@ -22,7 +22,7 @@ public class AnimationManager : MonoBehaviour
     {
         _entityController = GetComponent<EntityController>();
 
-        _movementController = GetComponent<PlayerMovementController>();
+        _movementController = GetComponent<MovementController>();
         _combatController = GetComponent<CombatController>();
         _animator = gameObject.GetComponent<Animator>();
 
@@ -37,7 +37,15 @@ public class AnimationManager : MonoBehaviour
         _movementController.OnStrafeDirectionChange += OnStrafeDirectionChange;
         _movementController.OnJumpStateChange += OnJump;
 
-        _combatController.OnStartFiringCannon += CannonFired;
+        _combatController.OnDamage += Damage;
+        _combatController.OnDeath += Death;
+
+        if (_combatController is PlayerCombatController)
+        {
+            PlayerCombatController playerCombatController = _combatController as PlayerCombatController;
+
+            playerCombatController.OnStartFiringCannon += CannonFired;
+        }
     }
 
     #endregion
@@ -72,6 +80,14 @@ public class AnimationManager : MonoBehaviour
     private void CannonFired()
     {
         _animator.SetTrigger("Fire");
+    }
+    private void Death()
+    {
+        _animator.SetTrigger("Death");
+    }
+    private void Damage()
+    {
+        _animator.SetTrigger("Damage");
     }
     #endregion
 }

@@ -107,8 +107,6 @@ public class MovementController : MonoBehaviour
     public event RootMotionMovementToggle OnRootMotionMovementToggle;
     #endregion
 
-    [SerializeField] protected Transform _cameraDirection;
-    [SerializeField] protected Transform _camera;
     protected EntityController _entityController;
   //  protected CombatController _combatController;
     protected CharacterController _controller;   
@@ -228,9 +226,7 @@ public class MovementController : MonoBehaviour
         if (GetAimingDirection() == Vector3.zero)
             return;
 
-        _transform.Rotate(Vector3.up, _aimingInput.x * GetHorizontalCameraSpeed() * Time.deltaTime);
-
-        _camera.Rotate(Vector3.right, _aimingInput.y * GetMaxVerticalCameraSpeed() * Time.deltaTime);
+        _transform.Rotate(Vector3.up, _aimingInput.x * Time.deltaTime);
     }
 
     #endregion
@@ -274,28 +270,32 @@ public class MovementController : MonoBehaviour
 
         _move *= Time.deltaTime;
 
-        _controller.Move(_cameraDirection.TransformDirection(_move));
+        _controller.Move(_move);
 
         OnMovementSpeedChange?.Invoke(Mathf.Clamp(_movementInput.magnitude, 0, _movementSpeedLimitation) * (_currentMovementSpeed/GetMaxMovementSpeed()));
 
         OnStrafeDirectionChange?.Invoke(GetStrafeDirection()); 
     }
-    private void UpdateMovementState()
+    protected virtual void UpdateMovementState()
     {
         if ((_movementInput.x != 0 || _movementInput.y != 0) && _canBasicMove)
         {
             if(!_isMoving)
-                OnMovingStateChange?.Invoke(true);
+                SendMovementStateUpdateEvent(true);
 
             _isMoving = true;
         }
         else
         {
             if (_isMoving)
-                OnMovingStateChange?.Invoke(false);
+                SendMovementStateUpdateEvent(false);
 
             _isMoving = false;     
         }
+    }
+    protected void SendMovementStateUpdateEvent(bool state)
+    {
+        OnMovingStateChange?.Invoke(state);
     }
     protected virtual void SetJumpingState(bool state)
     {
@@ -568,9 +568,9 @@ public class MovementController : MonoBehaviour
     {
         return new Vector3(_aimingInput.x, 0, _aimingInput.y).normalized;
     }
-    public Vector3 GetMovementVector()
+    public virtual Vector3 GetMovementVector()
     {
-        return _cameraDirection.TransformDirection(_move);
+        return _move;
     }
 
     public Vector2 GetVector2FromVector3(Vector3 direction)

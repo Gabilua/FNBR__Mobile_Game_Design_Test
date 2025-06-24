@@ -100,6 +100,9 @@ MonoBehaviour:
   _collisionMask:
     serializedVersion: 2
     m_Bits: 72
+  _damageMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &7202469864506915167
 GameObject:
   m_ObjectHideFlags: 0

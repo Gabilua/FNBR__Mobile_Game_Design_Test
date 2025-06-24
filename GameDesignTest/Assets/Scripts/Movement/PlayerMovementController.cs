@@ -6,6 +6,9 @@ using static PlayerInputManager;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovementController : MovementController
 {
+    [SerializeField] protected Transform _cameraDirection;
+    [SerializeField] protected Transform _camera;
+
     private PlayerInputManager _inputManager;
  //   private PlayerUIManager _playerUIManager;
     protected GameObject _lockedOnTargetMarker;
@@ -46,6 +49,23 @@ public class PlayerMovementController : MovementController
     }
     #endregion
 
+    protected override void Aim(bool instantly = false)
+    {
+       base.Aim(instantly);
+
+        _transform.Rotate(Vector3.up, _aimingInput.x * GetHorizontalCameraSpeed() * Time.deltaTime);
+        _camera.Rotate(Vector3.right, _aimingInput.y * GetMaxVerticalCameraSpeed() * Time.deltaTime);
+    }
+    protected override void Move()
+    {
+        _move = _cameraDirection.TransformDirection(_move);
+
+        base.Move();
+    }
+    public override Vector3 GetMovementVector()
+    {
+        return _cameraDirection.TransformDirection(_move);
+    }
 
     protected void JumpInputPerformed()
     {

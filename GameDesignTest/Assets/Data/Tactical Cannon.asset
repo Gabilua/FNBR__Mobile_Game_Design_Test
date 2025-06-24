@@ -18,3 +18,5 @@ MonoBehaviour:
   weaponProjectileBaseForce: 4
   weaponTotalChargeTime: 3
   weaponShotCooldown: 5
+  weaponExplosionRadius: 5.5
+  weaponExplosionBaseDamage: 50

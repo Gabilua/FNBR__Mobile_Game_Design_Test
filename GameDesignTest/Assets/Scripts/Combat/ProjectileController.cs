@@ -10,6 +10,7 @@ public class ProjectileController : MonoBehaviour
     public event ProjectileHit OnProjectileHit;
 
     [SerializeField] private LayerMask _collisionMask;
+    [SerializeField] private LayerMask _damageMask;
     private Rigidbody _rigibody;
     private CapsuleCollider _collider;
     private ProjectileRuntimeProperties _projectileProperties;
@@ -63,8 +64,28 @@ public class ProjectileController : MonoBehaviour
     }
     private void SurfaceCollision(RaycastHit hit)
     {
+        Explode();
+
         OnProjectileHit?.Invoke(hit.point, hit.normal);
         Destroy(gameObject);
+    }
+
+    private void Explode()
+    {
+        Collider[] nearbyColliders = Physics.OverlapSphere(transform.position, _projectileProperties.explosionRadius, _damageMask);
+
+        if (nearbyColliders.Length == 0)
+            return;
+
+        foreach (var collider in nearbyColliders)
+        {
+            EntityController entity = collider.GetComponent<EntityController>();
+
+            if (entity == _shooter)
+                continue;
+
+            entity.GetComponent<CombatController>().ReceiveDamage(_projectileProperties.explosionDamage);
+        }
     }
     #endregion
 }
@@ -78,6 +99,9 @@ public struct ProjectileRuntimeProperties
 
     public float mass;
     public float drag;
+
+    public float explosionRadius;
+    public float explosionDamage;
 
     public Vector3 GetInitialVelocity()
     {

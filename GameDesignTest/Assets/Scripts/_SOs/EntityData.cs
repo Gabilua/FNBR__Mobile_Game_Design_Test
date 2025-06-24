@@ -14,4 +14,6 @@ public class EntityData : ScriptableObject
     public AnimationCurve horizontalJumpForceCurve;
 
     public WeaponData startingWeapon;
+
+    public float maxHealth;
 }

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a571060c37aa6941a782a50f675b861, type: 3}
-  m_Name: Player
+  m_Name: NPC
   m_EditorClassIdentifier: 
-  maxMovementSpeed: 6
+  maxMovementSpeed: 0.5
   maxTurnSpeed: 300
   maxVerticalCameraSpeed: 200
   jumpHeight: 3
