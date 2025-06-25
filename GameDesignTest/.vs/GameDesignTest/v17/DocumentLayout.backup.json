@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|d:\\gabs\\unity\\fnbr__mobile_game_design_test\\gamedesigntest\\assets\\scripts\\combat\\playercombatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\combat\\playercombatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\assets\\scripts\\player\\playerinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\assets\\scripts\\combat\\playercombatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\combat\\playercombatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\assets\\scripts\\movement\\npcmovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement\\npcmovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|d:\\gabs\\unity\\fnbr__mobile_game_design_test\\gamedesigntest\\assets\\joystick pack\\scripts\\base\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|solutionrelative:assets\\joystick pack\\scripts\\base\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACCC8BDB-A5B5-6FA7-77C4-575AA885C4E1}|Assembly-CSharp-Editor.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\assets\\joystick pack\\scripts\\editor\\joystickeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACCC8BDB-A5B5-6FA7-77C4-575AA885C4E1}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\joystick pack\\scripts\\editor\\joystickeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\assets\\3rdparty\\code\\character movement fundamentals\\source\\scripts\\input\\character\\characterkeyboardinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,6 +53,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\assets\\scripts\\_sos\\entitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\_sos\\entitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Joystick Pack\\Scripts\\Base\\Joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB23335-31E3-41E2-7340-5FE2103A9501}|Assembly-CSharp.csproj|solutionrelative:Assets\\Joystick Pack\\Scripts\\Base\\Joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACCC8BDB-A5B5-6FA7-77C4-575AA885C4E1}|Assembly-CSharp-Editor.csproj|D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Joystick Pack\\Scripts\\Editor\\JoystickEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACCC8BDB-A5B5-6FA7-77C4-575AA885C4E1}|Assembly-CSharp-Editor.csproj|solutionrelative:Assets\\Joystick Pack\\Scripts\\Editor\\JoystickEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CharacterKeyboardInput.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\3rdParty\\Code\\Character Movement Fundamentals\\Source\\Scripts\\Input\\Character\\CharacterKeyboardInput.cs",
               "RelativeDocumentMoniker": "Assets\\3rdParty\\Code\\Character Movement Fundamentals\\Source\\Scripts\\Input\\Character\\CharacterKeyboardInput.cs",
@@ -82,12 +82,11 @@
               "RelativeToolTip": "Assets\\3rdParty\\Code\\Character Movement Fundamentals\\Source\\Scripts\\Input\\Character\\CharacterKeyboardInput.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T21:38:59.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T21:38:59.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "JoystickEditor.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Joystick Pack\\Scripts\\Editor\\JoystickEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Joystick Pack\\Scripts\\Editor\\JoystickEditor.cs",
@@ -95,12 +94,11 @@
               "RelativeToolTip": "Assets\\Joystick Pack\\Scripts\\Editor\\JoystickEditor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T21:28:22.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T21:28:22.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Joystick.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Joystick Pack\\Scripts\\Base\\Joystick.cs",
               "RelativeDocumentMoniker": "Assets\\Joystick Pack\\Scripts\\Base\\Joystick.cs",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "Assets\\Joystick Pack\\Scripts\\Base\\Joystick.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T20:19:48.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T20:19:48.192Z"
             },
             {
               "$type": "Document",
@@ -121,38 +118,36 @@
               "RelativeToolTip": "Assets\\Scripts\\Movement\\NPCMovementController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T21:04:12.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T21:04:12.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlayerCombatController.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Combat\\PlayerCombatController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\PlayerCombatController.cs",
               "ToolTip": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Combat\\PlayerCombatController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Combat\\PlayerCombatController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAADwv+QAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T20:28:50.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerInputManager.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Player\\PlayerInputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInputManager.cs",
               "ToolTip": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Player\\PlayerInputManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInputManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T16:11:42.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T16:11:42.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "CombatController.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Combat\\CombatController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\CombatController.cs",
@@ -164,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "ProjectileController.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Combat\\ProjectileController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\ProjectileController.cs",
@@ -176,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Combat\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\EnemySpawner.cs",
@@ -188,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "MovementController.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Movement\\MovementController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movement\\MovementController.cs",
@@ -200,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "WeaponHUDController.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\UI\\WeaponHUDController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\WeaponHUDController.cs",
@@ -212,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "AnimationManager.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Visuals\\AnimationManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Visuals\\AnimationManager.cs",
@@ -224,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "PlayerMovementController.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\Movement\\PlayerMovementController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movement\\PlayerMovementController.cs",
@@ -236,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "EntityData.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\_SOs\\EntityData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\_SOs\\EntityData.cs",
@@ -248,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "WeaponData.cs",
               "DocumentMoniker": "D:\\Gabs\\Unity\\FNBR__Mobile_Game_Design_Test\\GameDesignTest\\Assets\\Scripts\\_SOs\\WeaponData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\_SOs\\WeaponData.cs",
