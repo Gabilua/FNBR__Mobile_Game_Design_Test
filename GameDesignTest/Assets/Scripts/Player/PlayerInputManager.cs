@@ -2,8 +2,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
-using UnityEngine.Windows;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
     public enum GameplayMode { BaseGameplayInput, UIInput}
 public enum InputType {  Press, Release, Hold }
