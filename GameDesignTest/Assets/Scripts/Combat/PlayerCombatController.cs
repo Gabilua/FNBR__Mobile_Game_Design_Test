@@ -179,7 +179,7 @@ public class PlayerCombatController : CombatController
     {
         _currentCharge = charge;
     }
-    private float GetChargeRate()
+    public float GetChargeRate()
     {
         return (_currentCharge / _entityController.entityData.startingWeapon.weaponTotalChargeTime);
     }
@@ -196,6 +196,10 @@ public class PlayerCombatController : CombatController
         _weaponOnCooldown = state;
 
         _weaponShotCooldownTimer = state == true ? _entityController.entityData.startingWeapon.weaponShotCooldown : 0f;
+    }
+    public float GetCooldownRate()
+    {
+        return _weaponShotCooldownTimer / _entityController.entityData.startingWeapon.weaponShotCooldown;
     }
     #endregion
 

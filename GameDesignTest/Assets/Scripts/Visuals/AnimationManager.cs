@@ -81,7 +81,7 @@ public class AnimationManager : MonoBehaviour
     {
         _animator.SetTrigger("Fire");
     }
-    private void Death()
+    private void Death(CombatController deadEntity)
     {
         _animator.SetTrigger("Death");
     }

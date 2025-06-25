@@ -9,7 +9,7 @@ public class CombatController : MonoBehaviour
     public delegate void Damage();
     public event Damage OnDamage;
 
-    public delegate void Death();
+    public delegate void Death(CombatController deadEntity);
     public event Death OnDeath;
 
     [ReadOnly][SerializeField] protected Rigidbody _rigidbody;
@@ -51,7 +51,7 @@ public class CombatController : MonoBehaviour
     {
         _isDead = true;
 
-        OnDeath?.Invoke();
+        OnDeath?.Invoke(this);
 
         Destroy(gameObject, Random.Range(3f, 6f));
     }
