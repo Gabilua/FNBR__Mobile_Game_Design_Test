@@ -36,7 +36,7 @@ public class ProjectileController : MonoBehaviour
     #region Movement
     private void ShootProjectile()
     {
-        _rigibody.AddForce(_projectileProperties.initialSpeed *( _projectileProperties.initialDirection + (_projectileProperties.addedMovementVector * 0.25f)), ForceMode.Impulse);
+        _rigibody.AddForce(_projectileProperties.initialSpeed * _projectileProperties.initialDirection, ForceMode.Impulse);
     }
     private void ProjectileAlignment()
     {

@@ -26,7 +26,7 @@ namespace CMF
 			{
                 case ButtonType.LStick:
                     {
-                        if (inputType == InputType.Press)
+                        if (inputType == InputType.Hold)
                             movementInput = (Vector2)inputAxis;
                         else if (inputType == InputType.Release)
                             movementInput = Vector3.zero;

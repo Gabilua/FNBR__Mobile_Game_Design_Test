@@ -24,6 +24,8 @@ public class EnemySpawner : MonoBehaviour
 
         for (int i = 0; i < firstSpawnNumber; i++)
             SpawnEnemy();
+
+        Invoke("RespawnEnemies", Random.Range(_respawnInterval.x, _respawnInterval.y));
     }
     private void RespawnEnemies()
     {
@@ -40,6 +42,7 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemy()
     {
         CombatController enemy = Instantiate(_enemyPrefab, GetRandomPointOnNavmesh(), Quaternion.Euler(0f, Random.Range(0f, 360f), 0f)).GetComponent< CombatController>();
+        enemy.transform.SetParent(transform);
         _spawnedEnemies.Add(enemy);
 
         enemy.OnDeath += EnemyDied;

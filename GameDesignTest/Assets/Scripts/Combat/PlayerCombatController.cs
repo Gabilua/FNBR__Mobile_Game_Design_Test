@@ -10,6 +10,7 @@ public class PlayerCombatController : CombatController
 
     [SerializeField] private Transform _cannonBarrelPoint;
     [ReadOnly][SerializeField] private bool _isCharging;
+    [ReadOnly][SerializeField] private bool _holdCharge;
     [ReadOnly][SerializeField] private float _currentCharge;
     [ReadOnly][SerializeField] private float _currentShootingForce;
     [ReadOnly][SerializeField] private bool _weaponOnCooldown;
@@ -24,6 +25,9 @@ public class PlayerCombatController : CombatController
     #region Unity
     private void Update()
     {
+        if (_holdCharge)
+            return;
+
         UpdateChargeVisualFeedback();
 
         if (_weaponOnCooldown)
@@ -114,9 +118,11 @@ public class PlayerCombatController : CombatController
                         return;
 
                     if (inputType == InputType.Press)
-                        ToggleCharging(true);
+                        OnToggleChargeButtonClicked();
+                    else if (inputType == InputType.Hold)
+                        OnToggleChargeButtonHeld();
                     else if (inputType == InputType.Release)
-                        ToggleCharging(false);
+                        OnToggleChargeButtonHoldRelease();
                 }
                 break;
         }
@@ -128,7 +134,7 @@ public class PlayerCombatController : CombatController
     #endregion
 
     #region Firing
-    private void CannonFire()
+    public void CannonFire()
     {
         if (_weaponOnCooldown)
             return;
@@ -163,6 +169,24 @@ public class PlayerCombatController : CombatController
     #endregion
 
     #region Charging
+
+    public void OnToggleChargeButtonHeld()
+    {
+        if (!_isCharging)
+            ToggleCharging(true);
+
+        if(_holdCharge)
+            _holdCharge = false;
+    }
+    public void OnToggleChargeButtonHoldRelease()
+    {
+        _holdCharge = true;
+    }
+    public void OnToggleChargeButtonClicked()
+    {
+        if (_isCharging)
+            ToggleCharging(false);
+    }
     private void ToggleCharging(bool state)
     {
         _isCharging = state;
@@ -171,6 +195,8 @@ public class PlayerCombatController : CombatController
             _currentCharge = 0;
 
         _projectileTrajectoryDisplay.ToggleTrajectoryDisplay(state);
+
+        _holdCharge = false;
     }
     private void UpdateChargingTime(float charge)
     {

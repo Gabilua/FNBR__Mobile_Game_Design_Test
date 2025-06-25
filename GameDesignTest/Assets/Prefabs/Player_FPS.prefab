@@ -287,6 +287,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae63d9bbe0bb1f4fb6092e54409a315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lStick: {fileID: 0}
+  _rStick: {fileID: 0}
+  _lStickPressed: 0
+  _rStickPressed: 0
+  _chargeStickReceivingInput: 0
+  _chargeStickBeingHeld: 0
+  _chargeStickHoldTreshold: 0
+  _chargeStickInputDuration: 0
 --- !u!114 &3162708615658426364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +440,7 @@ MonoBehaviour:
   _isDead: 0
   _cannonBarrelPoint: {fileID: 279894334624018117}
   _isCharging: 0
+  _holdCharge: 0
   _currentCharge: 0
   _currentShootingForce: 0
   _weaponOnCooldown: 0
@@ -772,6 +781,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1337751555076283838}
     m_Modifications:
+    - target: {fileID: 2275948061057981230, guid: 06e00a558a38f524596bfaef6be105ca, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.65
+      objectReference: {fileID: 0}
     - target: {fileID: 5356401271951307100, guid: 06e00a558a38f524596bfaef6be105ca, type: 3}
       propertyPath: m_Name
       value: HitMarker

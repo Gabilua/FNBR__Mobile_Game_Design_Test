@@ -26,7 +26,7 @@ namespace CMF
             {
                 case ButtonType.RStick:
                     {
-                        if (inputType == InputType.Press)
+                        if (inputType == InputType.Hold)
                             aimInput = (Vector2)inputAxis;
                         else if (inputType == InputType.Release)
                             aimInput = Vector3.zero;

@@ -6,7 +6,9 @@ using System.Collections;
 public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
 
+
     [Header("Settings")]
+
     [SerializeField, Range(1, 15)]private float Radio = 5;//the ratio of the circumference of the joystick
     [SerializeField, Range(0.01f, 1)]private float SmoothTime = 0.5f;//return to default position speed
     [SerializeField, Range(0.5f, 4)] private float OnPressScale = 1.5f;//return to default position speed
@@ -110,7 +112,9 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 backImage.CrossFadeColor(PressColor, Duration, true, true);
                 stickImage.CrossFadeColor(PressColor, Duration, true, true);
             }
-        }
+
+           
+        }     
     }
 
     /// <summary>
@@ -158,6 +162,8 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 backImage.CrossFadeColor(NormalColor, Duration, true, true);
                 stickImage.CrossFadeColor(NormalColor, Duration, true, true);
             }
+
+         
         }
     }
 
@@ -232,4 +238,6 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             return (StickRect.position.y - DeathArea.y) / Radio;
         }
     }
+
+    
 }
