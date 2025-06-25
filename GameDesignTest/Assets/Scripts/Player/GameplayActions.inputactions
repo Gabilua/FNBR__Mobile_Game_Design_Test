@@ -345,7 +345,7 @@
                     "id": "98cf519d-2942-494f-bd7e-5c8294c42b6d",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
-                    "processors": "ScaleVector2(x=0.005,y=-0.0025)",
+                    "processors": "ScaleVector2(x=0.01,y=-0.0025)",
                     "groups": "",
                     "action": "RStick",
                     "isComposite": false,

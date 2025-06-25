@@ -1,5 +1,6 @@
 using UnityEngine;
 using NaughtyAttributes;
+using TMPro;
 
 public class PlayerCombatController : CombatController
 {
@@ -14,6 +15,8 @@ public class PlayerCombatController : CombatController
     [ReadOnly][SerializeField] private float _currentShootingForce;
     [ReadOnly][SerializeField] private bool _weaponOnCooldown;
     [ReadOnly][SerializeField] private float _weaponShotCooldownTimer;
+    [SerializeField] private GameObject _weaponShotCooldownDisplay;
+    [SerializeField] private TextMeshProUGUI _weaponShotCooldownDisplayNumber;
 
     private ProjectileRuntimeProperties _projectileRuntimeProperties;
     [SerializeField] private ProjectileTracjectoryDisplayController _projectileTrajectoryDisplay;
@@ -29,7 +32,10 @@ public class PlayerCombatController : CombatController
         if (_weaponOnCooldown)
         {
             if (_weaponShotCooldownTimer > 0f)
+            {
                 _weaponShotCooldownTimer -= Time.deltaTime;
+                _weaponShotCooldownDisplayNumber.text = Mathf.CeilToInt(_weaponShotCooldownTimer).ToString();
+            }
             else if (_weaponShotCooldownTimer < 0f)
                 ToggleCooldown(false);
 
@@ -193,6 +199,8 @@ public class PlayerCombatController : CombatController
         _weaponOnCooldown = state;
 
         _weaponShotCooldownTimer = state == true ? _entityController.entityData.startingWeapon.weaponShotCooldown : 0f;
+
+        _weaponShotCooldownDisplay.gameObject.SetActive(state);
     }
     public float GetCooldownRate()
     {
