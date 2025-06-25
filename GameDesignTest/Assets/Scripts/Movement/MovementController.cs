@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
-using AYellowpaper.SerializedCollections;
 
 [System.Serializable]
 public struct ExternalForceSettings

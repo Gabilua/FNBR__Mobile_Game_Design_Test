@@ -65,4 +65,4 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   startingWeapon: {fileID: 11400000, guid: 891239b4d4cb8dc4bb1b13cba6533a18, type: 2}
-  maxHealth: 100
+  maxHealth: 51

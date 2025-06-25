@@ -1,7 +1,4 @@
 using NaughtyAttributes;
-using System.Timers;
-using UnityEditor;
-using UnityEditor.Animations.Rigging;
 using UnityEngine;
 
 public class CombatController : MonoBehaviour
